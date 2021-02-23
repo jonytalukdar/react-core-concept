@@ -1,3 +1,4 @@
+import { render } from '@testing-library/react';
 import React from 'react';
 import Products from './product';
 
@@ -8,7 +9,6 @@ function App() {
     { name: 'second', price: '$32' },
     { name: 'third', price: '$34' },
   ];
-
   return (
     <div>
       <ul>
@@ -19,8 +19,9 @@ function App() {
           <li>{list}</li>
         ))}
       </ul>
-      <Products product={products[0]} />
-      <Products product={products[1]} />
+      {products.map((pd) => (
+        <Products product={pd}></Products>
+      ))}
 
       <Person name={nayoks[0]} naika="bobita" />
       <Person name="razzak" naika="shabana" />
