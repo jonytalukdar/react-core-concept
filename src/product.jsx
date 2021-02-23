@@ -5,8 +5,7 @@ function Products(props) {
     border: '1px solid #ddd',
     borderRadius: '10px',
     backgroundColor: '#ddd',
-    height: '200px',
-    width: '200px',
+    width: '300px',
     margin: '12px auto',
     padding: '12px',
   };

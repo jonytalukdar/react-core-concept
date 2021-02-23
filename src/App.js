@@ -1,6 +1,7 @@
 import { render } from '@testing-library/react';
 import React from 'react';
 import Products from './product';
+import Count from './count';
 
 function App() {
   const nayoks = ['anwar', 'faruk', 'jafur', 'alamgir', 'manna'];
@@ -11,6 +12,7 @@ function App() {
   ];
   return (
     <div>
+      <Count></Count>
       <ul>
         {products.map((list) => (
           <li>{list.name}</li>
