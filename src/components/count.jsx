@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 
 function Count() {
-  const [count, setCount] = useState(54);
-  //   const handeIncrease = () => setCount(count + 1);
-  //   const handleDecrease = () => setCount(count - 1);
-
+  const [count, setCount] = useState(12);
+  const IncreseHandle = () => {
+    const newCount = setCount(count + 1);
+    return newCount;
+  };
+  const decreaseHandle = () => {
+    const newCount = setCount(count - 1);
+    return newCount;
+  };
   return (
     <div>
-      <h1>count :{count} </h1>
-      <button onClick={() => setCount(count - 1)}>Decrease</button>
-      <button onClick={() => setCount(count + 1)}>Increase</button>
+      <h1>Count : {count} </h1>
+      <button onClick={decreaseHandle}>Decrease</button>
+      <button onClick={IncreseHandle}>Increase</button>
     </div>
   );
 }

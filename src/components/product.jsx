@@ -1,22 +1,22 @@
 import React from 'react';
 
-function Products(props) {
+function Product(props) {
   const productStyle = {
-    border: '1px solid #ddd',
-    borderRadius: '10px',
     backgroundColor: '#ddd',
     width: '300px',
-    margin: '12px auto',
+    margin: '10px auto',
     padding: '12px',
+    textAlign: 'center',
+    borderRadius: '12px',
   };
   const { name, price } = props.product;
   return (
     <div style={productStyle}>
-      <h1>name: {name}</h1>
-      <h1>Price :{price} </h1>
+      <h3>{name}</h3>
+      <h4>price: {price}</h4>
       <button>Buy Now</button>
     </div>
   );
 }
 
-export default Products;
+export default Product;
