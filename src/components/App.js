@@ -2,6 +2,7 @@ import { render } from '@testing-library/react';
 import React from 'react';
 import Product from './product';
 import Count from './count';
+import Api from './api';
 
 function App() {
   const friendsList = ['shimul', 'akash', 'robin', 'rashudul', 'polash'];
@@ -12,6 +13,8 @@ function App() {
   ];
   return (
     <div>
+      <Api />
+
       <Count />
       <ul>
         {friendsList.map((list) => (
