@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Profile from './Components/Profile/Profile';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <h1>hello react is awesome to learn</h1>
+      <div className="App">
+        <Profile />
       </div>
     );
   }
